@@ -5,26 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SIC MORELOS</title>
   <style>
-    /* Estilo visual mejorado */
-
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #e6ecf2;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #eef2f5;
       color: #333;
     }
 
     header {
-      background: linear-gradient(to right, #004080, #0066cc);
+      background: linear-gradient(to right, #003366, #0059b3);
       color: #fff;
       text-align: center;
-      padding: 40px 20px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      padding: 60px 20px 40px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 10px;
     }
 
@@ -34,16 +31,18 @@
     }
 
     .cta-button {
-      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      font-size: 16px;
       background-color: #c00000;
-      color: #fff;
-      padding: 12px 24px;
-      margin-top: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
       transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .cta-button:hover {
@@ -51,3 +50,48 @@
     }
 
     nav {
+      background-color: #0059b3;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #004080;
+      font-size: 20px;
+    }
+
+    #nosotros p {
+      font-size: 16px;
+      margin-bottom: 
