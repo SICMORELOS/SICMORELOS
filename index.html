@@ -2,109 +2,143 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SIC MORELOS</title>
-  <link rel="icon" href="logo-sicmorelos.png" type="image/png" />
   <style>
+    /* ESTILOS CSS INTEGRADOS */
+
     body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
     }
+
     header {
-      background-color: #034e84;
-      color: white;
-      padding: 20px;
+      background-color: #004080;
+      color: #fff;
       text-align: center;
+      padding: 40px 20px;
     }
-    header img {
-      max-height: 80px;
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
     }
+
+    header p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #c00000;
+      color: #fff;
+      padding: 12px 20px;
+      margin-top: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
     nav {
-      background-color: #0277bd;
+      background-color: #0066cc;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
-      color: white;
+      color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 6px;
     }
-    h2 {
-      color: #034e84;
+
+    section h2 {
+      color: #004080;
+      margin-bottom: 20px;
     }
-    ul li {
-      margin-bottom: 8px;
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
     }
+
+    .contact-links a {
+      display: block;
+      margin-bottom: 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
     footer {
-      background-color: #034e84;
-      color: white;
+      background-color: #002f5e;
+      color: #fff;
       text-align: center;
       padding: 15px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #d32f2f;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo-sicmorelos.png" alt="SIC MORELOS" />
     <h1>SIC MORELOS</h1>
     <p>Soluciones integrales en computación desde 2004</p>
+    <p>Mantenimiento, ventas, instalación y reparación</p>
+    <a href="#contacto" class="cta-button">Solicita una cotización</a>
   </header>
 
   <nav>
+    <a href="#inicio">Inicio</a>
     <a href="#servicios">Servicios</a>
-    <a href="#nosotros">Nosotros</a>
+    <a href="#nosotros">Sobre Nosotros</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <section id="servicios">
     <h2>Servicios</h2>
     <ul>
-      <li>Mantenimiento preventivo y correctivo</li>
-      <li>Ventas de equipo, software y consumibles</li>
-      <li>Instalación de sistemas (CCTV, interfones, cercas)</li>
-      <li>Reparación de computadoras, impresoras y laptops</li>
+      <li>Mantenimiento preventivo y correctivo a PC’s, laptops e impresoras</li>
+      <li>Venta de equipo, software y consumibles</li>
+      <li>Instalación de sistemas de seguridad (CCTV, interfones, cercas electrificadas)</li>
+      <li>Cableado y configuración de redes de voz y datos</li>
     </ul>
   </section>
 
   <section id="nosotros">
-    <h2>Quiénes somos</h2>
+    <h2>Sobre Nosotros</h2>
     <p>
-      Somos una empresa establecida en Cuernavaca desde 2004. Nuestro compromiso es ofrecer soluciones tecnológicas de alta calidad a empresas, hogares y personas físicas. Nos guiamos por la mejora continua, la capacitación constante y el servicio al cliente.
+      SIC MORELOS es una empresa establecida desde 2004 que ofrece soluciones tecnológicas accesibles, confiables y personalizadas.
     </p>
-    <p><strong>Misión:</strong> Brindar servicios tecnológicos actualizados con costos competitivos.</p>
-    <p><strong>Visión:</strong> Consolidarnos como la mejor opción en soluciones informáticas en Morelos.</p>
-    <p><strong>Objetivo:</strong> Satisfacer integralmente las necesidades de nuestros clientes con personal altamente calificado.</p>
+    <p><strong>Misión:</strong> Ofrecer servicios y productos informáticos de alta calidad.</p>
+    <p><strong>Visión:</strong> Ser una empresa líder en Morelos en soluciones tecnológicas.</p>
+    <p><strong>Valores:</strong> Honestidad, compromiso, responsabilidad, atención personalizada.</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📞 <a href="tel:7772893806" class="button">Clic para llamar</a></p>
-    <p>💬 <a href="https://wa.me/527772893806" target="_blank" class="button">Click para WhatsApp</a></p>
-    <p>📍 <a href="https://www.google.com/maps?q=Calle+Pradera+baja+100,+interior+A,+Col.+La+Pradera,+Cuernavaca+Morelos" target="_blank" class="button">Ver en mapa</a></p>
+    <div class="contact-links">
+      📞 <a href="tel:7772893806">Clic para llamar</a>
+      💬 <a href="https://wa.me/527772893806" target="_blank">Click para WhatsApp</a>
+      📍 <a href="https://www.google.com/maps?q=Calle+Pradera+baja+100,+interior+A,+Col.+La+Pradera,+Cuernavaca+Morelos" target="_blank">Ver en mapa</a>
+    </div>
     <p>📧 Correo: <a href="mailto:info@sicmorelos.com">info@sicmorelos.com</a></p>
     <p>🏠 Dirección: Calle Pradera baja Nº 100, interior A, Col. La Pradera, Cuernavaca, Morelos. C.P. 62170</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 SIC MORELOS. Todos los derechos reservados.</p>
-    <p>Tel: 777 289 3806 | Correo: info@sicmorelos.com</p>
-    <p>Ubicación: Cuernavaca, Morelos</p>
+    <p>&copy; 2024 SIC MORELOS. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
+
